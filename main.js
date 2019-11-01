@@ -1,15 +1,13 @@
-const angka = [1, 2, 3, 4, 5]
-const angkaBaru = [...angka, 6, 7]
+const angka = [1, 2, 3, 4]
+const [a, , c] = angka
+
+console.log(a, c)
 
 const biodata = {
   nama: "Naufal",
   kampus: "UNIKOM"
 }
 
-const biodataBaru = {
-  ...biodata,
-  asal: "Aceh"
-}
+const {nama} = biodata
 
-console.log(angkaBaru)
-console.log(biodataBaru)
+console.log(nama)
