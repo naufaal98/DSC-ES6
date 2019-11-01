@@ -1,13 +1,13 @@
-const angka = [1, 2, 3, 4]
-const [a, , c] = angka
+const angka = [1, 2, 3, 4, 5]
 
-console.log(a, c)
+const multiplyAngka = angka.map(num => {
+  return num * 2
+})
 
-const biodata = {
-  nama: "Naufal",
-  kampus: "UNIKOM"
-}
+console.log(multiplyAngka)
 
-const {nama} = biodata
+const filterAngkaGanjil = angka.filter(num => {
+  return num % 2 === 1
+})
 
-console.log(nama)
+console.log(filterAngkaGanjil)
