@@ -1,15 +1,25 @@
-const printInfoMahasiswa = (nama, nim, prodi) => {
-  console.log(`Nama: ${nama}, NIM: ${nim}, Prodi: ${prodi}`)
+class Manusia {
+  constructor () {
+    this.jenisKelamin = "Pria"
+  }
+
+  printJenisKelaim () {
+    console.log(this.jenisKelamin)
+  }
 }
 
-const perkalian = (a, b) => {
-  return a * b;
+class Orang extends Manusia {
+  constructor () {
+    super()
+    this.nama = "Naufal"
+  }
+
+  printNama() {
+    console.log(this.nama)
+  }
 }
 
-const pembagian = (a, b) => a / b;
+const orang = new Orang()
 
-printInfoMahasiswa("Naufal", "10517095", "Sistem Informasi")
-let hasilPerkalian = perkalian(10, 5)
-console.log(hasilPerkalian)
-let hasilPembagian = pembagian(20, 5)
-console.log(hasilPembagian)
+orang.printNama()
+orang.printJenisKelaim()
