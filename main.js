@@ -1,25 +1,15 @@
-class Manusia {
-  constructor () {
-    this.jenisKelamin = "Pria"
-  }
+const angka = [1, 2, 3, 4, 5]
+const angkaBaru = [...angka, 6, 7]
 
-  printJenisKelaim () {
-    console.log(this.jenisKelamin)
-  }
+const biodata = {
+  nama: "Naufal",
+  kampus: "UNIKOM"
 }
 
-class Orang extends Manusia {
-  constructor () {
-    super()
-    this.nama = "Naufal"
-  }
-
-  printNama() {
-    console.log(this.nama)
-  }
+const biodataBaru = {
+  ...biodata,
+  asal: "Aceh"
 }
 
-const orang = new Orang()
-
-orang.printNama()
-orang.printJenisKelaim()
+console.log(angkaBaru)
+console.log(biodataBaru)
